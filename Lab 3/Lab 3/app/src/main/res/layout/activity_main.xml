@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="195dp"
@@ -13,9 +14,8 @@
         android:layout_centerHorizontal="true"
         android:text="TextView"
         android:textAlignment="center"
-        android:textSize="24sp"
+        android:textSize="34sp"
         tools:text="Pick a list" />
-
 
     <EditText
         android:id="@+id/listOptions"
@@ -23,28 +23,31 @@
         android:layout_height="356dp"
         android:layout_below="@id/textView"
         android:layout_centerHorizontal="true"
-        android:text="EditText" />
+        android:text="List Options"
+        android:textAlignment="center" />
 
     <Button
         android:id="@+id/createButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="184dp"
+        android:layout_height="71dp"
         android:layout_below="@id/listOptions"
         android:layout_alignParentStart="false"
 
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="85dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="0dp"
         android:onClick="onClick"
         android:text="Create" />
 
     <Button
         android:id="@+id/editButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="184dp"
+        android:layout_height="71dp"
         android:layout_below="@id/listOptions"
         android:layout_alignParentRight="true"
         android:layout_marginTop="0dp"
-        android:layout_marginRight="97dp"
+        android:layout_marginRight="14dp"
         android:text="Edit" />
+
+
 </RelativeLayout>

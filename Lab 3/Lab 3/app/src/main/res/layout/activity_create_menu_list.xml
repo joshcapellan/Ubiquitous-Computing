@@ -1,95 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CreateMenuListActivity">
+    tools:context=".CreateMenuListActivity"
+    tools:ignore="ExtraText">
 
     <TextView
         android:id="@+id/currList"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="147dp"
+        android:layout_height="43dp"
+        android:layout_centerHorizontal="true"
         android:text="Current List"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="16dp"
-        tools:ignore="MissingConstraints"/>
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textListNo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/currList"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="22dp"
         android:text="List Number"
-        tools:layout_editor_absoluteX="51dp"
-        tools:layout_editor_absoluteY="63dp"
-        tools:ignore="MissingConstraints"/>
-
-    <TextView
-        android:id="@+id/textName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="List Name"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="113dp"
-        tools:ignore="MissingConstraints"/>
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="53dp"
         android:text="List Content"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="181dp"
+        android:textSize="16sp"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextListNo"
-        android:layout_width="205dp"
-        android:layout_height="39dp"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/currList"
+        android:layout_marginLeft="86dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/textListNo"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
-        tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="63dp"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextName"
-        android:layout_width="wrap_content"
+        android:layout_width="146dp"
         android:layout_height="wrap_content"
+        android:layout_below="@id/textListNo"
+        android:layout_marginLeft="102dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/textName"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="113dp"
-        tools:ignore="MissingConstraints" />
+        android:text="Name" />
 
     <EditText
         android:id="@+id/editTextList"
-        android:layout_width="wrap_content"
+        android:layout_width="148dp"
         android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:layout_marginLeft="88dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/textList"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="159dp"
-        tools:layout_editor_absoluteY="168dp"
-        tools:ignore="MissingConstraints" />
+        android:text="Name" />
 
     <Button
         android:id="@+id/createButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="116dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/editTextList"
+        android:layout_marginTop="64dp"
         android:text="Create"
-        tools:layout_editor_absoluteX="51dp"
-        tools:layout_editor_absoluteY="259dp"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/editButton"
+
+        android:layout_width="116dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/editTextList"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="65dp"
+        android:layout_toRightOf="@id/createButton"
+        android:text="Edit" />
+
+    <Button
+        android:id="@+id/viewButton"
+
+        android:layout_width="116dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/createButton"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="17dp"
+        android:text="View" />
+
+    <TextView
+        android:id="@+id/textName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Edit"
-        tools:layout_editor_absoluteX="219dp"
-        tools:layout_editor_absoluteY="259dp"
+        android:layout_below="@id/textListNo"
+        android:layout_marginTop="61dp"
+        android:text="List Name"
+        android:textSize="16sp"
         tools:ignore="MissingConstraints" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/viewAllButton"
+        android:layout_width="116dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/editButton"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@id/viewButton"
+        android:text="View All" />
+
+</RelativeLayout>
