@@ -1,25 +1,17 @@
 package com.example.lab2q3;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.ProgressDialog;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
-
 import com.example.img_url_.databinding.ActivityMainBinding;
-
 import java.net.URL;
-
-
-
 import java.io.IOException;
 import java.io.InputStream;
 
 public class MainActivity extends AppCompatActivity {
-
 
     ActivityMainBinding binding;
     Handler mainHandler = new Handler();
@@ -43,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //fetch image method using thread
     class FetchImage extends Thread{
 
         String URL;
@@ -61,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void run() {
 
+                    //gives progress bar for getting image
                     progressDialog = new ProgressDialog(MainActivity.this);
                     progressDialog.setMessage("Getting your pic....");
                     progressDialog.setCancelable(false);
@@ -68,6 +62,8 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
 
+
+            //method to obtain url(from notes)
             InputStream inputStream = null;
             try {
                 inputStream = new URL(URL).openStream();

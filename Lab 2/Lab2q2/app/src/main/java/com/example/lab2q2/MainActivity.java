@@ -68,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
                     EditText editText = (EditText) findViewById(R.id.editTextTextPersonName);
                     String message = ("Welcome to the app user: " + editText.getText().toString());
                     emailIntent.putExtra(EXTRA_MESSAGE, message);
+                    emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{Email});
                     //need this to prompts email client only
                     emailIntent.setType("message/rfc822");
                     startActivity(emailIntent);

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateMenuListActivity">
+
+    <TextView
+        android:id="@+id/currList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current List"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints"/>
+
+    <TextView
+        android:id="@+id/textListNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List Number"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="63dp"
+        tools:ignore="MissingConstraints"/>
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List Name"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="113dp"
+        tools:ignore="MissingConstraints"/>
+
+    <TextView
+        android:id="@+id/textList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List Content"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="181dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextListNo"
+        android:layout_width="205dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="63dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="113dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="168dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/createButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="259dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        tools:layout_editor_absoluteX="219dp"
+        tools:layout_editor_absoluteY="259dp"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
