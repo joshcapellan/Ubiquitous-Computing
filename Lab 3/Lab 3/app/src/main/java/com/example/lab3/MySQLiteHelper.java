@@ -108,5 +108,15 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
         return lists;
     }
 
+    //method to view data
+    public Cursor viewData(){
+        SQLiteDatabase db = this.getReadableDatabase();
+        String query = "Select * from " + TABLE_List;
+        Cursor cursor = db.rawQuery(query, null);
+
+        return cursor;
+
+    }
+
 
 }

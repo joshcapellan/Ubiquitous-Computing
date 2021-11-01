@@ -12,25 +12,34 @@
         android:layout_width="195dp"
         android:layout_height="46dp"
         android:layout_centerHorizontal="true"
-        android:text="TextView"
+        android:text="Pick a list"
         android:textAlignment="center"
         android:textSize="34sp"
         tools:text="Pick a list" />
 
-    <EditText
-        android:id="@+id/listOptions"
+<!--    <EditText-->
+<!--        android:id="@+id/listOptions"-->
+<!--        android:layout_width="196dp"-->
+<!--        android:layout_height="356dp"-->
+<!--        android:layout_below="@id/textView"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:text="List Options"-->
+<!--        android:textAlignment="center" />-->
+
+    <ListView
+        android:id="@+id/user_list"
         android:layout_width="196dp"
-        android:layout_height="356dp"
+        android:layout_height="500dp"
         android:layout_below="@id/textView"
-        android:layout_centerHorizontal="true"
-        android:text="List Options"
-        android:textAlignment="center" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="107dp" />
 
     <Button
         android:id="@+id/createButton"
         android:layout_width="184dp"
         android:layout_height="71dp"
-        android:layout_below="@id/listOptions"
+        android:layout_below="@id/user_list"
         android:layout_alignParentStart="false"
 
         android:layout_alignParentLeft="true"
@@ -43,7 +52,7 @@
         android:id="@+id/editButton"
         android:layout_width="184dp"
         android:layout_height="71dp"
-        android:layout_below="@id/listOptions"
+        android:layout_below="@id/user_list"
         android:layout_alignParentRight="true"
         android:layout_marginTop="0dp"
         android:layout_marginRight="14dp"

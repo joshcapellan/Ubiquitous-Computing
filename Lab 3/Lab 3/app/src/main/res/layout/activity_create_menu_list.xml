@@ -13,6 +13,8 @@
         android:layout_height="43dp"
         android:layout_centerHorizontal="true"
         android:text="Current List"
+        android:textAlignment="center"
+        android:textSize="20sp"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -47,7 +49,6 @@
         android:layout_toRightOf="@id/textListNo"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -59,8 +60,7 @@
         android:layout_marginTop="40dp"
         android:layout_toRightOf="@id/textName"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/editTextList"
@@ -71,8 +71,7 @@
         android:layout_marginTop="30dp"
         android:layout_toRightOf="@id/textList"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/createButton"
@@ -89,8 +88,8 @@
         android:layout_width="116dp"
         android:layout_height="60dp"
         android:layout_below="@id/editTextList"
-        android:layout_marginLeft="21dp"
-        android:layout_marginTop="65dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="64dp"
         android:layout_toRightOf="@id/createButton"
         android:text="Edit" />
 
@@ -121,7 +120,7 @@
         android:layout_height="60dp"
         android:layout_below="@id/editButton"
         android:layout_marginLeft="25dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="17dp"
         android:layout_toRightOf="@id/viewButton"
         android:text="View All" />
 
