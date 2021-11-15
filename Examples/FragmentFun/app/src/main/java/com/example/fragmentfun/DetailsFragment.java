@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-public class DetailsFragment extends Fragment {
+public class  DetailsFragment extends Fragment {
     /*
      * Constant array of data about each of the four turtles.
      */
