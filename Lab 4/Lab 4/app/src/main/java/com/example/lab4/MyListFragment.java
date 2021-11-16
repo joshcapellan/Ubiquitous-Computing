@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 public class MyListFragment extends ListFragment implements OnItemClickListener {
 
-    private  static final int REQUEST_CODE_DETAILS_ACTIVITY = 1234;
+
     @Override
     public View onCreateView(LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
